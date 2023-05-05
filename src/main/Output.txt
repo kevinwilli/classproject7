@@ -1,0 +1,69 @@
+------------------------Results--------------------------
+---------------------------------------------------------
+Num of Elemt    |      Time       |       Operation       |      
+---------------------------------------------------------
+  1000          |    481400       |     Sort ArrayList
+----------------|-----------------|------------------------
+   1000         |      34540000   |     Shuffle Arraylist
+----------------|-----------------|------------------------
+  1000          |      40800      |     Sequentially get ArrayList
+----------------|-----------------|------------------------
+    1000        |   40800         |     Randomly get ArrayList
+----------------|-----------------|------------------------
+   1000         |     4290600     |     Add ArrayList
+---------------------------------------------------------------------------
+    1000        |    384500       |     Sort LinkedList
+----------------|-----------------|------------------------
+    1000        |     432357800   |     Shuffle LinkedList
+----------------|-----------------|-------------------------
+   1000         |     450600      |     Sequentially get LinkedList
+----------------|-----------------|------------------------
+    1000        |     459326700   |     Randomly get LinkedList
+----------------|-----------------|------------------------
+    1000        |       3012900   |     Add LinkedList
+______________________________________________________________________
+    100000      |  7432400        |     Sort ArrayList
+----------------|-----------------|------------------------
+  100000        |   30135200      |     Shuffle Arraylist
+----------------|-----------------|------------------------
+    100000      |    4151200      |     Sequentially get ArrayList
+----------------|-----------------|------------------------
+  100000        |   28162600      |     Randomly get ArrayList
+----------------|-----------------|------------------------
+    100000      |   92425200      |     Add ArrayList
+----------------|-----------------|-------------------------------------------
+    100000      |   12239500      |     Sort LinkedList
+----------------|-----------------|------------------------
+     100000     |   292756465100  |     Shuffle LinkedList
+----------------|-----------------|-------------------------
+     100000     | 18517423100     |     Sequentially get LinkedList
+----------------|-----------------|------------------------
+     100000     |  263542835500   |     Randomly get LinkedList
+----------------|-----------------|------------------------
+     100000     | 56915200        |     Add LinkedList
+_________________________________________________________________
+        
+
+Analysis:
+
+In term of sorting operation;
+ the ArrayList is not efficient when the number of 
+ element is not large(LinkedList is then more efficient). 
+ But when hte number of element is large then
+ it becomes efficient than the LinkedList.
+
+ In term of adding an element,
+ the ArrayList is relativley efficient than a Linkedlist
+ for a non-large amount of element. But for a large amount of element,
+ the LinkedList seems to be more efficient.
+
+ In term of getting an element Sequentially;
+ the ArrayList for a large amoount of element is efficient than a LinkedList.
+
+ In term of getting an element Randomly;
+ the ArrayList is more efficient as well than a LinkedList.
+
+ In term of Suffling the array; 
+ The ArrayList for a large amount of element is more effcient than a Linkedlist.
+
+ In sum, the results seemed to be consistent with how the lists are implemented. 
